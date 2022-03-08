@@ -401,6 +401,7 @@ textarea::-webkit-outer-spin-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   padding: 8px;
   border-right: 1px solid #f2f2f2;
   line-height: 1.42;
@@ -478,8 +479,43 @@ textarea::-webkit-outer-spin-button {
   height: 16px;
 }
 
+.recent-order-area .menu-name {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.recent-order-area .menu-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff3d3b;
+}
+
+.menu-category-area {
+  position: sticky;
+  top: 94px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.menu-category-area .category-list {
+  display: flex;
+  align-content: center;
+  height: 54px;
+}
+
+.menu-category-area .category-tab {
+  display: flex;
+  align-content: center;
+  padding: 0 12px;
+}
+
 .container {
   padding-top: 94px;
+  background-color: #f4f7f9;
 }
 
 .common-inner {

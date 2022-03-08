@@ -10,6 +10,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-shrink: 0; // 원래 가져야하는 너비값 보존
         padding: 8px;
         border-right: 1px solid $booking-color-bg102;
         line-height: 1.42;
@@ -84,5 +85,18 @@
     .ico-cart {
         width: 16px;
         height: 16px;
+    }
+
+    .menu-name {
+        margin-top: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        @include ellipse;
+    }
+
+    .menu-price {
+        font-size: 13px;
+        font-weight: 700;
+        color: $point-color;
     }
 }
