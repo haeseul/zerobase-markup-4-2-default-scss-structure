@@ -136,6 +136,97 @@ textarea::-webkit-outer-spin-button {
   text-indent: -9999px;
 }
 
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #03c75a;
+  color: #fff;
+  z-index: 5000;
+}
+
+.header-area .place-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.header-area .place-header .title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header-area .place-header .link-back {
+  display: flex;
+}
+
+.header-area .place-header .my-orders {
+  padding-right: 18px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.header-area .place-tab {
+  display: flex;
+  height: 46px;
+  background-color: #03b753;
+}
+
+.header-area .tab-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 8px;
+  width: 100%;
+}
+
+.header-area .tab-inner .tab {
+  flex: 1;
+  padding: 0 12px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.header-area .tab-inner .tab.is-active {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.header-area .tab-inner .tab.is-active .txt::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+}
+
+.header-area .tab-inner .tab .txt {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+  line-height: 46px;
+}
+
 .dimmed-layer {
   position: fixed;
   top: 0;
@@ -199,4 +290,109 @@ textarea::-webkit-outer-spin-button {
   border-radius: 28px;
   background-color: #424242;
   color: #fff;
+}
+
+.order-info-area {
+  padding: 10px 18px 20px;
+  border-bottom: 1px solid rbga(0, 0, 0, 0.04);
+  background-color: #e7f7ff;
+}
+
+.order-info-area .info-main-title {
+  line-height: 39px;
+}
+
+.order-info-area .title {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.order-info-area .title .ico-n-logo {
+  margin-right: 6px;
+  width: 24px;
+  height: 24px;
+}
+
+.tab-switch-box {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.tab-switch-box .tab-switch {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.06);
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+
+.tab-switch-box .tab-switch.is-active {
+  position: relative;
+  flex-grow: 1.2;
+  border: 1px solid #333;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 3px 0 rbga(0, 0, 0, 0.05);
+}
+
+.tab-switch-box .tab-switch.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-width: 0 1px 1px 0;
+  background-color: #fff;
+  transform: rotate(45deg) translateX(-50%);
+}
+
+.tab-switch-box .tab-switch.is-active .ico-check {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.tab-switch-box .ico-check {
+  display: none;
+}
+
+.info-main-notice {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #fff;
+  border-radius: 2px;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.info-main-notice.alert {
+  color: #ff3d3b;
+  font-weight: 700;
+}
+
+.info-main-notice .ico-clock {
+  margin-right: 6px;
+}
+
+.container {
+  padding-top: 94px;
+}
+
+.common-inner {
+  margin: 0 auto;
+  max-width: 720px;
 }

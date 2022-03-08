@@ -6,3 +6,16 @@
     overflow: hidden;
     text-indent: -9999px;
 }
+
+.scroll-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;    // 가로로 쭉 펼치겠다 (넘쳐도 wrap하지 않는다)
+    -webkit-overflow-scrolling: touch;  // 모바일에서 터치로 스크롤링 할 때 가속도가 붙는 스크롤링 가능
+    // 스크롤 바 없애기
+    -ms-overflow-style: none; // MS
+    scrollbar-width: none;   // 파이어폭스
+    &::-webkit-scrollbar {  // 크롬
+        display: none;
+    }
+}
