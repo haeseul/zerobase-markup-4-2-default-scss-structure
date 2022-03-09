@@ -1,4 +1,4 @@
-@mixin ellipse {
+@mixin ellipsis {
     // 밴딩되지 않도록 옆으로 이어지게 + 영역이 넘어가면 히든
     // 텍스트라면 말줄임 처리
     text-overflow: ellipsis;
