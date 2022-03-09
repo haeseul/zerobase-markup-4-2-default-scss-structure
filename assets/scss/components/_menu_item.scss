@@ -116,6 +116,7 @@
 
 .menu-info-group {
     display: flex;
+    align-items: center;
     flex-shrink: 0;
     margin-top: 4px;
     font-size: 14px;
@@ -124,7 +125,7 @@
         flex-shrink: 0;
         font-weight: 700;
         color: $booking-color-text6;
-
+        
         .ico-star {
             margin-right: 2px;
         }
