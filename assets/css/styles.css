@@ -966,6 +966,76 @@ body.scroll-off {
   margin-top: 14px;
 }
 
+.option-popup-area .content-body .option-item .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 17px;
+}
+
+.option-popup-area .content-body .option-item .label.checked {
+  font-weight: 700;
+}
+
+.option-popup-area .content-body .option-item .label.checked .price {
+  font-weight: 600;
+  color: #ff3d3b;
+}
+
+.option-popup-area .content-body .option-item .label .label-txt {
+  padding-right: 8px;
+}
+
+.option-popup-area .content-body .option-item .label .label-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.option-popup-area .content-body .option-item .input-radio:checked + .label,
+.option-popup-area .content-body .option-item .input-check:checked + .label {
+  font-weight: 700;
+}
+
+.option-popup-area .content-body .option-item .input-radio + .label .label-icon {
+  border-radius: 100%;
+}
+
+.option-popup-area .content-body .option-item .input-radio:checked + .label .label-icon {
+  border: 8px solid #01d760;
+}
+
+.option-popup-area .content-body .option-item .input-check + .label .label-icon {
+  border-radius: 3px;
+}
+
+.option-popup-area .content-body .option-item .input-check:checked + .label .price {
+  font-weight: 600;
+  color: #ff3d3b;
+}
+
+.option-popup-area .content-body .option-item .input-check:checked + .label .label-icon {
+  position: relative;
+  border-color: #01d760;
+  background-color: #01d760;
+}
+
+.option-popup-area .content-body .option-item .input-check:checked + .label .label-icon::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 14px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-width: 0 0 2px 2px;
+  transform: rotate(-45deg);
+}
+
 .option-popup-area .content-bottom {
   padding: 0 10px 10px;
 }
