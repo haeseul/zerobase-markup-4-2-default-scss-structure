@@ -1,4 +1,5 @@
 .container {
+    min-height: 100vh;  // viewport height가 꽉 차도록
     background-color: $booking-color-border151;
     &:not(.order){
         padding-top: $place-header-height + $place-tab-height;
