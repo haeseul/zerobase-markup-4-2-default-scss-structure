@@ -20,6 +20,11 @@
     bottom: 0;
     background-color: rgba(#000, 0.8);
     z-index: 9999;
+    opacity: 1;
+    transition: transform 0.3s ease;
+    &.hidden {
+        opacity: 0;
+    }
     &.light {
         background-color: rgba(0,0,0,0.4);
     }
