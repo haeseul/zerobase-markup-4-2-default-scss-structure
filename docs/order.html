@@ -31,13 +31,186 @@
                     </div>
 
                     <div class="order-content-body">
+                        <!-- 담은메뉴없음 -->
+                        <div class="no-order hidden">
+                            <img src="../assets/images/ico-exclaim.svg" alt="" aria-hidden="true">
+                            <p class="txt">담은 메뉴가 없습니다.</p>
+                        </div>
+                        <!-- // 담은메뉴없음 -->
 
+                        <!-- 담은메뉴있음 -->
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div class="menu-img-area">
+                                    <img src="https://via.placeholder.com/74/ffffff/0000000" alt="{메뉴명}"
+                                     class="menu-img" width="74" height="74">
+                                </div>
+                                <div class="menu-info-area">
+                                    <p class="menu-name-group">
+                                        <span class="menu-name">메뉴이름</span>
+                                    </p>
+                                    <p class="menu-desc">메뉴에 대한 간단한 설명이 적혀있습니다 메뉴에 대한 간단한 설명이 적혀있습니다 </p>
+                                    <button class="btn-option">옵션변경</button>
+                                    <div class="amount-and-price">
+                                        <div class="amount-select">
+                                            <button class="btn-minus enabled" aria-label="빼기"></button>
+                                            <span class="amount">2</span>
+                                            <button class="btn-plus enabled" aria-label="더하기"></button>
+                                        </div>
+                                        <p class="menu-price">19,998원</p>
+                                    </div>
+                                </div>
+                                <button class="btn-delete">
+                                    <img src="../assets/images/ico-close.svg" alt="삭제" class="ico-delete">
+                                </button>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-img-area">
+                                    <img src="https://via.placeholder.com/74/ffffff/0000000" alt="{메뉴명}"
+                                     class="menu-img" width="74" height="74">
+                                </div>
+                                <div class="menu-info-area">
+                                    <p class="menu-name-group">
+                                        <span class="menu-name">메뉴이름</span>
+                                    </p>
+                                    <p class="menu-desc">메뉴에 대한 간단한 설명이 적혀있습니다 메뉴에 대한 간단한 설명이 적혀있습니다 </p>
+                                    <button class="btn-option">옵션변경</button>
+                                    <div class="amount-and-price">
+                                        <div class="amount-select">
+                                            <button class="btn-minus disabled" aria-label="빼기"></button>
+                                            <span class="amount">1</span>
+                                            <button class="btn-plus" aria-label="더하기"></button>
+                                        </div>
+                                        <p class="menu-price">9,999원</p>
+                                    </div>
+                                </div>
+                                <button class="btn-delete">
+                                    <img src="../assets/images/ico-close.svg" alt="삭제" class="ico-delete">
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="order-total">
+                            <span class="total-txt">총 주문금액</span>
+                            <span class="total-price">29,997원</span>
+                        </div>
+                        <!-- // 담은메뉴있음 -->
+                    </div>
+                </div>
+                <a href="#" class="btn-menu-add"><i class="ico-add"></i>메뉴추가</a>
+            </div>
+            <!-- / 주문서메뉴 -->
+
+            <!-- 주문자정보 -->
+            <div class="orderer-content-extra">
+                <div class="common-inner">
+                    <div class="orderer-info-area">
+                        <p class="title">주문자 정보</p>
+                        <ul class="info-list">
+                            <li class="info-item">
+                                <p class="info-title">일회용 수저, 포크</p>
+                                <div class="option-group">
+                                    <div class="option-item">
+                                        <input type="radio" id="need" class="input-radio" name="disposables" checked>
+                                        <label for="need" class="input-radio-button need">필요해요</label>
+                                    </div>
+                                    <div class="option-item">
+                                        <input type="radio" id="no-need" class="input-radio" name="disposables">
+                                        <label for="no-need" class="input-radio-button no-need">필요없어요</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="info-item">
+                                <p class="info-title">요청사항</p>
+                                <input type="text" placeholder="(선택) 요청사항을 입력해 주세요." class="input-text">
+                            </li>
+                            <li class="info-item">
+                                <p class="info-title">주문자 연락처<span class="fw700 color-point">(필수)</span></p>
+                                <input type="text" placeholder="연락처를 입력해 주세요." class="input-text" required>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="place-map-area">
+                        <p class="title">주문 매장 위치</p>
+                        <div class="map-area">
+                            <div class="place-address-box">
+                                <p class="place-name">샐러디 역삼점</p>
+                                <p class="place-address">서울시 강남구 역삼동 123-4</p>
+                                <p class="place-address-detail">역삼역 8번 출구로 나와서 직진 410m</p>
+                            </div>
+                            <img src="https://via.placeholder.com/400x170?text=map image" alt="" class="img-map">
+                        </div>
+                    </div>
+
+                    <div class="agreement-area">
+                        <p class="title">개인정보 수집, 제공</p>
+
+                        <ul class="agreement-list">
+                            <li class="agreement-item is-open">
+                                <div class="agreement-title">
+                                    <span class="txt">개인정보 수집 동의</span>
+                                    <button class="btn-toggle">
+                                        <img src="../assets/images/ico-arrow-gray.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="agreement-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                </div>
+                            </li>
+                            <li class="agreement-item">
+                                <div class="agreement-title">
+                                    <span class="txt">개인정보 제공 동의</span>
+                                    <button class="btn-toggle">
+                                        <img src="../assets/images/ico-arrow-gray.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="agreement-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                </div>
+                            </li>
+                            <li class="agreement-item">
+                                <div class="agreement-title color-point">
+                                    <span class="txt">주문취소 및 환불 유의사항</span>
+                                    <button class="btn-toggle">
+                                        <img src="../assets/images/ico-arrow-gray.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="agreement-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id suscipit quaerat quo rem magnam dolorem cupiditate adipisci architecto, tempora est fugiat consectetur magni ab velit accusamus provident, delectus eum.<br><br>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p class="agreement-info-txt">주문 서비스 이용을 위한 개인정보 수집 및 제3자 제공, 취소/환불 규정을 확인하였으며 이에 동의합니다.</p>
                     </div>
                 </div>
             </div>
-            <!-- / 주문서메뉴 -->
-        </div>
+            <!-- // 주문자정보 -->
+            
+            <!-- 주문하기버튼 -->
+            <div class="btn-order-area">
+                <button class="btn-order">
+                    <svg viewBox="0 0 18 18" width="18" height="18" class="ico-n-logo">
+                        <path fill-rule="evenodd" fill="currentColor" d="M18 0v18H0V0h18zM7.255 4.582H4.473v9.054h2.915V8.79l3.357 4.846h2.782V4.582h-2.915v4.846L7.255 4.582z"></path>
+                    </svg> 주문하기
+                </button>
+            </div>
+            <!-- // 주문하기버튼 -->
 
+            <!-- 맨위로 -->
+            <div class="go-to-top">
+                <a href="#" class="link">Top<i class="ico-up"></i></a>
+            </div>
+            <!-- // 맨위로 -->
+        </div>
     </div>
 </body>
 </html>

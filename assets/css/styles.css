@@ -94,7 +94,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   /* Chrome, Safari, Firefox */
-  color: #444;
+  color: #c9c9c9;
   opacity: 1;
 }
 
@@ -152,6 +152,14 @@ textarea::-webkit-outer-spin-button {
 body.scroll-off {
   overflow: hidden;
   touch-action: none;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.color-point {
+  color: #ff3d3b;
 }
 
 .header-area {
@@ -1591,6 +1599,7 @@ body.scroll-off {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+  z-index: 1;
 }
 
 .order-form-area .page-title-area .btn-close {
@@ -1599,10 +1608,41 @@ body.scroll-off {
   right: 0;
   width: 56px;
   height: 56px;
+  z-index: 1;
 }
 
 .order-form-area .page-title-area .btn-close .ico-close {
   width: 18px;
+}
+
+.order-form-area .btn-order-area {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.order-form-area .btn-order-area .btn-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 18px 0;
+  width: calc(100% - 18px*2);
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #01d760;
+  color: #fff;
+}
+
+.order-form-area .btn-order-area .btn-order .ico-n-logo {
+  margin-right: 6px;
+}
+
+.order-form-area .go-to-top {
+  padding: 26px 0;
+  background: none;
 }
 
 .order-content {
@@ -1801,6 +1841,192 @@ body.scroll-off {
   width: 1px;
   height: 13px;
   background-color: #01d760;
+}
+
+.orderer-content-extra .orderer-info-area,
+.orderer-content-extra .place-map-area,
+.orderer-content-extra .agreement-area {
+  padding: 0 18px 30px;
+  background-color: #fff;
+}
+
+.orderer-content-extra .title {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #242424;
+}
+
+.orderer-content-extra .orderer-info-area .info-item {
+  margin-top: 20px;
+}
+
+.orderer-content-extra .orderer-info-area .info-title {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #242424;
+}
+
+.orderer-content-extra .orderer-info-area .info-title::before {
+  content: '';
+  margin-right: 8px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #d5dadd;
+}
+
+.orderer-content-extra .orderer-info-area .option-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 45px;
+}
+
+.orderer-content-extra .orderer-info-area .option-group .option-item {
+  flex: 1;
+}
+
+.orderer-content-extra .orderer-info-area .input-radio {
+  position: absolute;
+}
+
+.orderer-content-extra .orderer-info-area .input-radio:checked + .input-radio-button {
+  border-color: #01d760;
+  background-color: #01d760;
+  font-weight: 700;
+  color: #fff;
+}
+
+.orderer-content-extra .orderer-info-area .input-radio-button {
+  display: block;
+  line-height: 45px;
+  border: 1px solid #e7e7e7;
+  background-color: #f8fafb;
+  font-size: 15px;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+.orderer-content-extra .orderer-info-area .input-radio-button.need {
+  border-radius: 5px 0 0 5px;
+}
+
+.orderer-content-extra .orderer-info-area .input-radio-button.no-need {
+  border-radius: 0 5px 5px 0;
+  border-left: 0;
+}
+
+.orderer-content-extra .orderer-info-area .input-text {
+  display: block;
+  margin-top: 10px;
+  padding: 0 12px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #d5dadd;
+  background-color: #fff;
+  font-size: 15px;
+  color: #242424;
+}
+
+.orderer-content-extra .place-map-area {
+  margin-top: 2px;
+  padding-bottom: 0;
+}
+
+.orderer-content-extra .place-map-area .map-area {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #fafbfc;
+  overflow: hidden;
+}
+
+.orderer-content-extra .place-map-area .place-address-box {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.orderer-content-extra .place-map-area .place-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #242424;
+}
+
+.orderer-content-extra .place-map-area .place-address {
+  margin-top: 4px;
+  color: #666;
+}
+
+.orderer-content-extra .place-map-area .place-address-detail {
+  margin-top: 8px;
+  color: #006f49;
+}
+
+.orderer-content-extra .place-map-area .img-map {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e9eef0;
+}
+
+.orderer-content-extra .agreement-area .agreement-list {
+  margin-top: 10px;
+  border: 1px solid #d5dadd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.orderer-content-extra .agreement-area .agreement-item:not(:first-child) {
+  border-top: 1px solid #ecf0f2;
+}
+
+.orderer-content-extra .agreement-area .agreement-item.is-open .agreement-content {
+  display: block;
+}
+
+.orderer-content-extra .agreement-area .agreement-item.is-open .btn-toggle {
+  transform: rotate(0deg);
+}
+
+.orderer-content-extra .agreement-area .agreement-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  height: 44px;
+  color: #242424;
+}
+
+.orderer-content-extra .agreement-area .agreement-title .txt {
+  font-size: 15px;
+}
+
+.orderer-content-extra .agreement-area .agreement-title .btn-toggle {
+  width: 44px;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+.orderer-content-extra .agreement-area .agreement-content {
+  display: none;
+  padding: 12px;
+  max-height: 194px;
+  border-top: 1px solid #ecf0f2;
+  background-color: #f8fafb;
+  font-size: 14px;
+  color: #666;
+  overflow-y: auto;
+}
+
+.orderer-content-extra .agreement-area .agreement-info-txt {
+  margin-top: 14px;
+  padding-left: 8px;
+  border-left: 3px solid #d5dadd;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.45px;
+  color: #666;
 }
 
 .container {
