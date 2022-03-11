@@ -1565,6 +1565,12 @@ body.scroll-off {
   letter-spacing: -0.3px;
 }
 
+.menu-list-area .btn-toggle {
+  display: flex;
+  margin: -16px;
+  padding: 16px;
+}
+
 .menu-list-area .period {
   font-size: 14px;
   letter-spacing: -0.3px;
